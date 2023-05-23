@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>SipN GUI</h1>
+
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+
+
+    <div>
+      <label for="sipAddress">SIP Address:</label>
+      <input type="text" id="sipAddress" name="sipAddress">
+    </div>
+
+    <div>
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="text" id="phoneNumber" name="phoneNumber">
+    </div>
+
+    <div>
+      <label for="messageContent">Message:</label>
+      <input type="text" id="messageContent" name="messageContent">
+    </div>
+
+    <button id="startCall">Start Call</button>
+    <button id="hangUp">Hang Up</button>
+    <button id="sendMessage">Send Message</button>
+
+	<div>
+  	<label for="newUsername">New Username:</label>
+  	<input type="text" id="newUsername" name="newUsername">
+	</div>
+
+	<div>
+	  <label for="newPassword">New Password:</label>
+	  <input type="password" id="newPassword" name="newPassword">
+	</div>
+
+	<div>
+  		<label for="hardcodedPassword">Enter hardcoded password:</label>
+  		<input type="password" id="hardcodedPassword" name="hardcodedPassword">
+	</div>
+
+	<button id="changeCredentials">Change Credentials</button>
+
+
+    <div id="feedback"></div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>
